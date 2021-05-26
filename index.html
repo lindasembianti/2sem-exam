@@ -4,7 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <section id="all-projects">
+      <div class="single-project">
+        <div class="project-container" id="chair">
+          <h1 class="project-name">01 Amager Chairs</h1>
+          <img class="cover" src="assets/images/chair.jpeg" />
+        </div>
+      </div>
+      <div class="single-project">
+        <div class="project-container" id="kitchen">
+          <h1 class="project-name">02 Oak Island Kitchen</h1>
+          <img class="cover" src="assets/images/kitchen.jpeg" />
+        </div>
+      </div>
+      <div class="single-project">
+        <div class="project-container" id="drawer">
+          <h1 class="project-name">03 Cherry Drawer</h1>
+          <img class="cover" src="assets/images/drawer.jpg" />
+        </div>
+      </div>
+      <div class="single-project">
+        <div class="project-container" id="table">
+          <h1 class="project-name">04 Round Oak Table</h1>
+          <img class="cover" src="assets/images/table_wood.jpeg" />
+        </div>
+      </div>
+    </section>
+    <section id="projects-cards">
+      <template class="single-card">
+        <h1 class="project-title"></h1>
+        <div class="project">
+          <div class="project-info">
+            <p></p>
+            <button class="inquire">
+              Enquire
+              <div class="arrow"></div>
+            </button>
+          </div>
+          <div class="project-pictures">
+            <img src="" />
+          </div>
+        </div>
+      </template>
+    </section>
+    <script src="home.js"></script>
+  </body>
 </html>
