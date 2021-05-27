@@ -4,62 +4,110 @@ main {
   padding-left: 5rem;
   padding-right: 5rem;
 }
+/*MONSI BUTTON*/
+#monsi {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 1.5rem;
+  background: none;
+  border: solid #423125 1px;
+  margin-left: auto;
+  margin-right: 20%;
+  z-index: 1;
+  cursor: pointer;
+}
+#monsi-btn-txt {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#monsi-btn-txt h2,
+#monsi-btn-txt p {
+  margin: 0;
+}
+h2 {
+  font-family: "Americana Std";
+}
+#monsi-btn-txt p {
+  font-family: "Neue Haas Grotesk Display Pro light";
+  font-size: larger;
+}
+#arrow-monsi {
+  background: url(/assets/images/arrow_icon.png);
+  width: 30%;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#monsi:hover #arrow-monsi h2 {
+  transform: translateX(10%);
+}
+
+/*PROJECTS*/
+
 #all-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 2rem;
+  margin-bottom: 3rem;
 }
 .project-container {
   position: relative;
 }
 .cover {
-  width: 100%;
+  width: 65%;
   opacity: 1;
   position: relative;
   transition: all 0.5s;
 }
+
 .project-name {
   z-index: 1;
   font-family: "Americana Std";
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   margin-left: 5%;
   margin-top: 2%;
   transition: all 0.5s;
 }
 #chair {
-  margin-top: -10rem;
-  margin-left: -4rem;
+  margin-bottom: 5rem;
+  margin-left: 10rem;
   background-size: cover;
   width: 80%;
 }
 #kitchen {
-  margin-top: 10rem;
-  margin-left: -3rem;
+  margin-top: 4rem;
+  margin-right: 3rem;
 }
 #drawer {
-  margin-top: 7rem;
-  margin-left: 7rem;
+  margin-left: 12rem;
+  width: 80%;
 }
 #table {
-  margin-top: 10rem;
-  margin-left: 7rem;
+  margin-top: -4rem;
+  margin-left: 3rem;
 }
 .project-container:hover .cover {
   opacity: 0.8;
   transition: all 0.5s;
 }
 .project-container:hover .project-name {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   transition: all 0.5s;
 }
 #projects-cards {
-  row-gap: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
 }
-/*.single-card {
+.single-card {
   background-color: #f4f1ea;
-}*/
+}
 .project-title {
   text-align: center;
   font-family: "Americana Std";
