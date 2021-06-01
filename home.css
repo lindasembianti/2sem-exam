@@ -16,7 +16,8 @@ main {
   border: solid #423125 1px;
   margin-left: auto;
   margin-right: 20%;
-  z-index: 1;
+  margin-bottom: 2rem;
+  z-index: 3;
   cursor: pointer;
 }
 #monsi-btn-txt {
@@ -42,8 +43,8 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-#monsi:hover #arrow-monsi h2 {
-  transform: translateX(10%);
+#monsi:hover {
+  background-color: red;
 }
 
 /*PROJECTS*/
@@ -51,15 +52,19 @@ h2 {
 #all-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  justify-items: center;
 }
-.project-container {
+
+.cover-link {
   position: relative;
+  width: 60%;
+  margin: 0;
+  align-self: center;
 }
 .cover {
-  width: 65%;
+  width: 100%;
   opacity: 1;
-  position: relative;
   transition: all 0.5s;
 }
 
@@ -69,33 +74,27 @@ h2 {
   position: absolute;
   font-size: 1.5rem;
   color: white;
-  margin-left: 5%;
+  margin-left: 2%;
   margin-top: 2%;
   transition: all 0.5s;
 }
-#chair {
-  margin-bottom: 5rem;
-  margin-left: 10rem;
-  background-size: cover;
-  width: 80%;
+/*TRANSLATE*/
+#all-projects a:nth-child(4n) {
+  transform: translate(30%, -90%);
 }
-#kitchen {
-  margin-top: 4rem;
-  margin-right: 3rem;
+
+#all-projects a:nth-child(4n + 2) {
+  transform: translate(0%, -30%);
 }
-#drawer {
-  margin-left: 12rem;
-  width: 80%;
+#all-projects a:nth-child(4n + 3) {
+  transform: translate(-30%, -30%);
 }
-#table {
-  margin-top: -4rem;
-  margin-left: 3rem;
-}
-.project-container:hover .cover {
+
+.project-div:hover .cover {
   opacity: 0.8;
   transition: all 0.5s;
 }
-.project-container:hover .project-name {
+.project-div:hover .project-name {
   font-size: 1.7rem;
   transition: all 0.5s;
 }
@@ -104,9 +103,11 @@ h2 {
   margin-right: 5rem;
   display: flex;
   flex-direction: column;
+  row-gap: 5rem;
 }
-.single-card {
+.card-div {
   background-color: #f4f1ea;
+  padding: 2rem;
 }
 .project-title {
   text-align: center;
