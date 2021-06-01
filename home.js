@@ -22,7 +22,7 @@ function showProjects(projects) {
     const copy = template.cloneNode(true);
     copy.querySelector(".project-title").textContent = project.name;
     copy.querySelector(".project-info p").textContent = project.description;
-    copy.querySelector(".project-pictures img").src = `${project.image}`;
+    copy.querySelector(".project-pictures img").src = `${project.image_square}`;
     document.querySelector("#projects-cards").appendChild(copy);
   });
 }
