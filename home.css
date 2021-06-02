@@ -10,14 +10,14 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  position: absolute;
   width: 30%;
   padding: 1.5rem;
   background: none;
   border: solid #423125 1px;
-  margin-left: auto;
-  margin-right: 20%;
+  left: 50%;
   margin-bottom: 2rem;
-  z-index: 3;
+  z-index: 1;
   cursor: pointer;
 }
 #monsi-btn-txt {
@@ -42,9 +42,11 @@ h2 {
   height: 2rem;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: all 0.2s;
 }
-#monsi:hover {
-  background-color: red;
+#monsi:hover #arrow-monsi {
+  transform: translateX(15%);
+  transition: all 0.2s;
 }
 
 /*PROJECTS*/
@@ -52,6 +54,7 @@ h2 {
 #all-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   justify-items: center;
 }
@@ -69,7 +72,7 @@ h2 {
 }
 
 .project-name {
-  z-index: 1;
+  z-index: 2;
   font-family: "Americana Std";
   position: absolute;
   font-size: 1.5rem;
