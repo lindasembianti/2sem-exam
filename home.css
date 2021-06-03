@@ -41,11 +41,11 @@ h2 {
   height: 2rem;
   background-size: contain;
   background-repeat: no-repeat;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 #monsi:hover #arrow-monsi {
   transform: translateX(15%);
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 /*PROJECTS*/
