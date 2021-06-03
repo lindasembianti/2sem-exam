@@ -1,0 +1,199 @@
+body {
+  background-color: #fffdf8;
+}
+
+/* main {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+} */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 150px;
+}
+
+#info #process div p {
+  max-width: 400px;
+  margin-left: 25px;
+  color: #423125;
+}
+
+#info #process div img {
+  max-width: 50px;
+  max-height: 50px;
+  margin-top: 3px;
+}
+
+#process h1 {
+  padding-bottom: 15px;
+  padding-top: 150px;
+  color: #423125;
+}
+
+#process div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#process {
+  margin-bottom: 70px;
+}
+
+#contact p {
+  max-width: 450px;
+  padding-bottom: 15px;
+  color: #423125;
+}
+
+#contact h1 {
+  padding-bottom: 15px;
+  color: #423125;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+#icons a {
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+#icons svg {
+  margin-right: 10px;
+}
+
+section {
+  width: 500px;
+}
+
+/* FORM STYLING */
+
+#form_section {
+  background-color: #f4f1ea;
+  margin-top: 170px;
+}
+
+#form_section h1 {
+  color: #423125;
+  font-family: "Americana std Roman";
+  padding-top: 0;
+  margin-top: 0;
+  padding: 25px;
+  border-bottom: 1px solid #423125;
+  border-top: 1px solid #423125;
+}
+
+form {
+  padding: 25px;
+}
+
+label.float {
+  position: absolute;
+  color: #423125;
+  font-size: 12px;
+  padding: 12px;
+}
+
+input {
+  background-color: #f4f1ea;
+  border: 1px solid #423125;
+  padding: 12px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  color: #423125;
+  font-size: 15px;
+}
+
+form input#fname {
+  width: 249px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+form input#phone_number {
+  width: 132px;
+  margin-bottom: 20px;
+}
+
+form input#email_felt {
+  margin-right: 10px;
+  width: 201px;
+}
+
+form select#project_type {
+  background-color: #f4f1ea;
+  border: 1px solid #423125;
+  padding: 15px;
+  padding-left: 10px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  appearance: none;
+  width: 205px;
+}
+
+div#budget {
+  margin-top: 20px;
+  border: 1px solid #423125;
+  padding: 15px;
+  max-width: 415px;
+  margin-bottom: 20px;
+}
+
+div#budget p {
+  padding-top: 0px;
+  margin-top: 0px;
+  color: #423125;
+  font-size: 13px;
+}
+
+div#budget label {
+  color: #423125;
+  font-size: 13px;
+  margin-right: 15px;
+}
+
+div#budget input[type="checkbox"] {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div#message_box textarea {
+  width: 432px;
+  background-color: #f4f1ea;
+  border: 1px solid #423125;
+  padding-left: 11px;
+  padding-top: 35px;
+  color: #423125;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+div#message_box textarea:focus {
+  outline: 1px solid #423125;
+}
+
+button {
+  background-color: #423125;
+  outline: none;
+  border: none;
+  padding: 14px;
+  width: 200px;
+  color: white;
+  font-size: 13px;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
