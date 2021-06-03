@@ -10,7 +10,9 @@
   </head>
   <body>
     <div class="logo-header">
-      <img src="/assets/images/monsi_logo.png" alt="monsi_logo_header" />
+      <a href="index.html">
+        <img src="/assets/images/monsi_logo.png" alt="monsi_logo_header"
+      /></a>
     </div>
     <header>
       <div class="nav-contact">
@@ -21,16 +23,18 @@
       </div>
     </header>
     <main>
-      <section id="form_section">
-        <h1>What type of custom solution are you looking for?</h1>
+      <div id="form_section">
+        <h2 class="heading">
+          What type of custom solution are you looking for?
+        </h2>
         <form action="POST" data-netlify="true" method="get" id="custom_form">
-          <div id="row_1">
+          <div class="row">
             <label class="float" for="fname">Full name</label>
             <input type="text" id="fname" name="fname" required />
             <label class="float" for="phone_number">Phone number</label>
             <input type="tel" id="phone_number" name="phone_number" required />
           </div>
-          <div id="row_2">
+          <div class="row">
             <label class="float" for="email_felt">E-mail</label>
             <input type="email" id="email_felt" name="email_felt" required />
 
@@ -90,20 +94,26 @@
             <label class="float" for="message">Message</label>
             <textarea id="message" name="message" rows="5" cols="55"></textarea>
           </div>
+          <button
+            type="submit"
+            form="custom_form"
+            value="Submit"
+            class="enquire"
+          >
+            Send enquire
+            <div class="arrow"></div>
+          </button>
         </form>
-        <button type="submit" form="custom_form" value="Submit">
-          Send enquire &#8594;
-        </button>
-      </section>
+      </div>
 
-      <section id="info">
+      <div id="info">
         <div id="process">
-          <h1>The Usual Process</h1>
+          <h1 class="heading">The Usual Process</h1>
           <div>
             <img src="assets/images/process_1.png" />
             <p>
               Once filling out the form you can expect to receive a call or
-              email from myself where we can arrange an appointment
+              email from me where we can arrange an appointment
             </p>
           </div>
           <div>
@@ -130,7 +140,7 @@
         </div>
 
         <div id="contact">
-          <h1>Direct Contact</h1>
+          <h1 class="heading">Direct Contact</h1>
           <p>
             If you have other questions or would like to get in contact with me,
             I will be available on the following:
@@ -173,7 +183,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer></footer>
   </body>

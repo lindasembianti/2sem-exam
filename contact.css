@@ -1,16 +1,12 @@
-body {
-  background-color: #fffdf8;
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10%;
 }
 
 /* main {
-  padding-top: 150px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-bottom: 100px;
-} */
-
-main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 100px;
@@ -19,45 +15,42 @@ main {
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 150px;
+  margin-top: 10%;
+} */
+#info {
+  display: flex;
+  flex-direction: column;
 }
-
 #info #process div p {
-  max-width: 400px;
-  margin-left: 25px;
+  margin: 1rem;
   color: #423125;
+  font-family: "Neue Haas Grotesk Display Pro light";
 }
 
 #info #process div img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 3rem;
+  max-height: 3rem;
   margin-top: 3px;
 }
 
 #process h1 {
   padding-bottom: 15px;
-  padding-top: 150px;
-  color: #423125;
 }
-
+.heading {
+  color: #423125;
+  font-family: "Americana Std";
+  font-weight: lighter;
+  font-size: xx-large;
+}
 #process div {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
 }
 
-#process {
-  margin-bottom: 70px;
-}
-
 #contact p {
-  max-width: 450px;
-  padding-bottom: 15px;
   color: #423125;
-}
-
-#contact h1 {
-  padding-bottom: 15px;
-  color: #423125;
+  font-family: "Neue Haas Grotesk Display Pro light";
 }
 
 #icons {
@@ -74,40 +67,48 @@ main {
 #icons svg {
   margin-right: 10px;
 }
-
-section {
-  width: 500px;
+#form_section,
+#info {
+  width: 550px;
 }
-
 /* FORM STYLING */
 
 #form_section {
   background-color: #f4f1ea;
-  margin-top: 170px;
 }
 
-#form_section h1 {
-  color: #423125;
-  font-family: "Americana std Roman";
+#form_section h2 {
   padding-top: 0;
   margin-top: 0;
   padding: 25px;
+  text-align: center;
   border-bottom: 1px solid #423125;
   border-top: 1px solid #423125;
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   padding: 25px;
+  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
 }
+/* .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+} */
 
 label.float {
   position: absolute;
   color: #423125;
-  font-size: 12px;
+  font-size: smaller;
   padding: 12px;
 }
 
 input {
+  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
   background-color: #f4f1ea;
   border: 1px solid #423125;
   padding: 12px;
@@ -119,6 +120,7 @@ input {
 
 form input#fname {
   width: 249px;
+
   margin-right: 10px;
   margin-bottom: 20px;
 }
@@ -173,6 +175,7 @@ div#budget input[type="checkbox"] {
 
 div#message_box textarea {
   width: 432px;
+  resize: none;
   background-color: #f4f1ea;
   border: 1px solid #423125;
   padding-left: 11px;
@@ -186,14 +189,41 @@ div#message_box textarea:focus {
   outline: 1px solid #423125;
 }
 
-button {
+/*DEFAULT BROWN BUTTON*/
+.enquire {
+  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
+  font-size: large;
   background-color: #423125;
-  outline: none;
-  border: none;
-  padding: 14px;
-  width: 200px;
   color: white;
-  font-size: 13px;
-  margin-left: 150px;
-  margin-bottom: 50px;
+  border: solid #423125 1px;
+  padding: 1rem;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.arrow {
+  background: url(/assets/images/arrow_icon-white.png);
+  width: 25%;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+.enquire:hover {
+  background: none;
+  border: solid #423125 1px;
+  color: #423125;
+  transition: all 0.2s;
+}
+.enquire:hover .arrow {
+  background: url(/assets/images/arrow_icon.png);
+  width: 25%;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
 }
