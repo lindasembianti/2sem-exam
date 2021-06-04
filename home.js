@@ -64,6 +64,7 @@ function showCards(projects) {
     copy.querySelector(".project-title").textContent = project.name;
     copy.querySelector(".project-info p").textContent = project.description;
     copy.querySelector(".project-pictures img").src = `${project.image_square}`;
+    copy.querySelector(".outlined h2").textContent = project.number;
     document.querySelector("#projects-cards").appendChild(copy);
   });
 }
