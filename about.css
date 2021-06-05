@@ -12,8 +12,7 @@ main {
 }
 #img-text {
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 #img {
@@ -23,9 +22,7 @@ main {
   width: 30vw;
   height: 50vh;
 }
-/* .about-row {
-  width: 100%;
-} */
+
 #about-text {
   padding: 2rem;
   width: 30vw;
@@ -53,8 +50,7 @@ main {
 
 #text {
   align-items: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 #text p {
   font-family: "Neue Haas Grotesk Display Pro light";
@@ -82,4 +78,44 @@ main {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #423125;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 1256px) {
+  .outlined h2 {
+    font-size: 220px;
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .outlined h2 {
+    font-size: 200px;
+  }
+  .outlined {
+    top: 80%;
+  }
+}
+@media screen and (max-width: 1036px) {
+  .outlined h2 {
+    font-size: 180px;
+  }
+
+  #about-text p {
+    line-height: 1.5;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+  #img,
+  #about-text {
+    width: 40vw;
+  }
 }

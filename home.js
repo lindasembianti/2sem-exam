@@ -14,7 +14,6 @@ fetch("https://kea2sem-5899.restdb.io/rest/monsi-projects", {
   });
 
 function showCovers(covers) {
-  console.log(covers);
   // sort by name
   covers.sort(function (a, b) {
     const nameA = a.name.toUpperCase(); // ignore upper and lowercase
@@ -30,7 +29,6 @@ function showCovers(covers) {
   });
   const template = document.querySelector(".project-container").content;
   covers.forEach((cover) => {
-    console.log(cover);
     const copy = template.cloneNode(true);
     copy.querySelector(".cover-link").href = `#${cover.name_short}`;
     copy.querySelector(".project-name").textContent = cover.name;
@@ -40,7 +38,6 @@ function showCovers(covers) {
 }
 
 function showCards(projects) {
-  console.log(projects);
   // sort by name
   projects.sort(function (a, b) {
     const nameA = a.name.toUpperCase(); // ignore upper and lowercase
@@ -58,7 +55,6 @@ function showCards(projects) {
   const template = document.querySelector(".single-card").content;
   //loop through data.comments
   projects.forEach((project) => {
-    console.log(project);
     const copy = template.cloneNode(true);
     copy.querySelector(".card-div").id = `${project.name_short}`;
     copy.querySelector(".project-title").textContent = project.name;

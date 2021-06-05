@@ -227,3 +227,12 @@ div#message_box textarea:focus {
   background-repeat: no-repeat;
   transition: all 0.2s;
 }
+#e_mail a,
+#phone a {
+  color: #423125;
+  text-decoration-line: none;
+}
+#e_mail a:hover,
+#phone a:hover {
+  text-decoration-line: underline;
+}
