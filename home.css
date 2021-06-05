@@ -1,7 +1,7 @@
 main {
   padding-top: 10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 /*MONSI BUTTON*/
 #monsi {
@@ -23,6 +23,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
+  color: #423125;
 }
 #monsi-btn-txt h2,
 #monsi-btn-txt p {
@@ -101,16 +102,16 @@ h2 {
   transition: all 0.5s;
 }
 #projects-cards {
-  margin-left: 5rem;
-  margin-right: 5rem;
+  /* margin-left: 5rem;
+  margin-right: 5rem; */
   display: flex;
   flex-direction: column;
   row-gap: 5rem;
 }
 .outlined {
   position: absolute;
-  /* font-size: 12rem; */
   width: 100%;
+  opacity: 0.3;
   height: 100%;
   display: flex;
   margin: 0;
