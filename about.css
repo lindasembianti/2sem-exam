@@ -1,7 +1,7 @@
 main {
   padding-top: 10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 #about {
   background-color: #f4f1ea;
@@ -12,36 +12,45 @@ main {
 }
 #img-text {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
   justify-content: space-evenly;
 }
-.about-row {
-  width: 100%;
+#img {
+  background: url(/assets/images/arthur.JPG);
+  background-size: cover;
+  background-position: bottom;
+  width: 30vw;
+  height: 50vh;
 }
+/* .about-row {
+  width: 100%;
+} */
 #about-text {
-  width: 30%;
   padding: 2rem;
+  width: 30vw;
+  margin: 0;
   background-color: #fffdf8;
 }
 .heading {
+  font-family: "Americana Std";
+  font-weight: lighter;
   text-align: center;
   font-size: 3rem;
   margin: 0;
   padding: 1rem;
+  color: #423125;
   border-bottom: 1px solid #423125;
   border-top: 1px solid #423125;
 }
-#about-text h2,
-#about-heading {
+#about-text h2 {
   font-family: "Americana Std";
 }
 #about-text p {
   font-family: "Neue Haas Grotesk Display Pro medium";
   line-height: 1.5;
 }
-#img-text img {
-  width: 30%;
-}
+
 #text {
   align-items: center;
   padding-bottom: 2rem;
@@ -49,7 +58,7 @@ main {
 }
 #text p {
   font-family: "Neue Haas Grotesk Display Pro light";
-  width: 40%;
+  width: 40vw;
   margin: auto;
   border: solid #423125 1px;
   padding: 2rem;
@@ -57,21 +66,19 @@ main {
 }
 .outlined {
   position: absolute;
-  height: 100%;
-  width: 80%;
+  padding: 0;
+  top: 70%;
+  left: 20%;
   display: flex;
-  border: solid red 1px;
 }
 .outlined h2 {
   text-transform: uppercase;
   z-index: 0;
-  border: solid blue 1px;
-  width: 80%;
-  height: auto;
+  width: 100%;
   font-family: "Americana std";
-  font-size: 200px;
-  padding: 0;
-  text-align: center;
+  opacity: 0.3;
+  font-size: 250px;
+  margin: 0;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #423125;
   -webkit-text-fill-color: transparent;
