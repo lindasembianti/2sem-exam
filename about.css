@@ -66,9 +66,11 @@ main {
 .outlined {
   position: absolute;
   padding: 0;
+  display: flex;
+}
+.outlined-about {
   top: 70%;
   left: 20%;
-  display: flex;
 }
 .outlined h2 {
   text-transform: uppercase;
@@ -82,46 +84,6 @@ main {
   -webkit-text-stroke-color: #423125;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 1256px) {
-  .outlined h2 {
-    font-size: 220px;
-  }
-}
-
-@media screen and (max-width: 1178px) {
-  .heading {
-    font-size: 2.5rem;
-  }
-
-  .outlined h2 {
-    font-size: 200px;
-  }
-  .outlined {
-    top: 80%;
-  }
-}
-@media screen and (max-width: 1036px) {
-  .outlined h2 {
-    font-size: 180px;
-  }
-
-  #about-text p {
-    line-height: 1.5;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 1000px) {
-  #img-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 3rem;
-  }
-  #img,
-  #about-text {
-    width: 40vw;
-  }
-}
 
 /* about wood */
 
@@ -132,7 +94,7 @@ main {
 /* fsc */
 
 .fsc-img img {
-  width: 50%;
+  width: 60%;
   padding: 4rem 0;
 }
 
@@ -146,12 +108,17 @@ main {
 .fsc {
   display: flex;
   flex-direction: row;
+  position: relative;
   margin: 0;
+}
+.outlined-fsc {
+  top: 20%;
+  left: 30%;
 }
 
 .fsc-text {
   align-items: center;
-  padding: 6rem 11rem;
+  padding: 4rem 7rem;
   height: 100%;
   margin: auto;
 }
@@ -165,13 +132,19 @@ main {
   border-bottom: #423125 1px solid;
   padding: 5rem 0;
   margin-bottom: 5rem;
+  position: relative;
+}
+.outlined-wood {
+  top: 15%;
+  left: 15%;
 }
 
 .woods-imgs {
   display: flex;
   flex-direction: row;
-  column-gap: 19rem;
-  margin: 5rem 11rem 0 11rem;
+  justify-content: space-around;
+  width: 100%;
+  margin: 7rem 0 2rem 0;
 }
 
 .woods-imgs img {
@@ -181,6 +154,7 @@ main {
 .heading-wood {
   font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
   letter-spacing: 0.1rem;
+  font-weight: lighter;
 }
 
 .fsc-text p,
@@ -188,10 +162,101 @@ main {
   font-family: "Neue Haas Grotesk Display Pro light", sans-serif;
   line-height: 1.5;
   font-weight: lighter;
+  font-size: larger;
 }
 
 .woods-text {
-  padding: 0 11rem;
+  padding: 0 6rem;
 }
 
 /* outlined text wood */
+/*RESPONSIVENESS*/
+@media screen and (max-width: 1256px) {
+  .outlined h2 {
+    font-size: 220px;
+  }
+  .fsc-img img {
+    width: 70%;
+  }
+  .fsc-text {
+    padding: 4rem 4rem;
+  }
+  .woods-text {
+    padding: 0 8rem;
+  }
+  .outlined-wood {
+    top: 30%;
+    left: 10%;
+  }
+  .woods-text {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .outlined h2 {
+    font-size: 200px;
+  }
+  .outlined-about {
+    top: 80%;
+  }
+
+  .fsc-text {
+    padding: 3rem 3rem;
+  }
+}
+@media screen and (max-width: 1046px) {
+  .outlined-wood h2 {
+    font-size: 180px;
+  }
+  .woods {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .woods-imgs {
+    margin: 4rem 0;
+  }
+  .fsc-text p,
+  .woods-text p {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 1036px) {
+  .outlined h2 {
+    font-size: 180px;
+  }
+
+  #about-text p {
+    line-height: 1.5;
+    padding: 0;
+  }
+  .fsc-img img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+  #img,
+  #about-text {
+    width: 40vw;
+  }
+
+  .outlined h2 {
+    font-size: 160px;
+  }
+  .woods-imgs img {
+    width: 40%;
+  }
+  .woods-text {
+    padding: 0 2rem;
+  }
+}
