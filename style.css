@@ -1,5 +1,9 @@
 /* general style */
 
+html {
+  color: #423125;
+}
+
 body {
   background-color: #fffdf8;
   padding: 0;
@@ -34,7 +38,7 @@ header {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 /* logo header */
@@ -46,7 +50,7 @@ header {
 
 .logo-header {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0;
   background-color: #fffdf8;
   width: 100%;
   top: 0;
@@ -72,8 +76,8 @@ header {
 /* margin of the footer */
 
 footer {
-  margin-right: 10rem;
-  margin-left: 10rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
 }
 
 .footer {
@@ -108,7 +112,7 @@ footer {
 }
 
 .footer-heading a:hover,
-p:hover {
+.footer-heading p:hover {
   text-decoration: underline;
 }
 
@@ -144,7 +148,6 @@ p:hover {
 }
 
 @media screen and (max-width: 720px) {
-
   .footer-2,
   .footer-3,
   .footer-4 {
@@ -155,4 +158,5 @@ p:hover {
 
   .footer {
     height: 90vh;
+  }
 }
