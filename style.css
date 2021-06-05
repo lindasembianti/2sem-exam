@@ -53,3 +53,106 @@ header {
   z-index: 2;
   position: fixed;
 }
+
+/* footer */
+
+.footer-container {
+  background-color: #f4f1ea;
+  padding-bottom: 3rem;
+  border-top: 1px solid #423125;
+  margin-top: 8rem;
+}
+
+.footer-logo img {
+  width: 12%;
+  height: auto;
+  margin: 3rem auto;
+}
+
+/* margin of the footer */
+
+footer {
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+.footer {
+  width: 80%;
+  height: 33vh;
+  background-color: #f4f1ea;
+  color: #423125;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  column-gap: 17rem;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  font-size: large;
+}
+
+.footer-heading a {
+  color: #423125;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  letter-spacing: normal;
+  font-size: small;
+}
+
+.footer-heading a:hover,
+.footer-heading p:hover {
+  text-decoration: underline;
+}
+
+.footer p,
+.footer a {
+  font-family: "Neue Haas Grotesk Display Pro Light", sans-serif;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.footer h2 {
+  font-family: "Neue Haas Grotesk Display Pro Roman", sans-serif;
+  font-weight: lighter;
+}
+
+.footer p {
+  line-height: 0.1rem;
+  color: #423125;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footer {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer-2,
+  .footer-3,
+  .footer-4 {
+    margin-top: 3rem;
+    align-items: center;
+    margin: auto;
+  }
+
+  .footer {
+    height: 90vh;
+  }
+}
