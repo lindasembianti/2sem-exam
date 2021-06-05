@@ -108,7 +108,7 @@ footer {
 }
 
 .footer-heading a:hover,
-p:hover {
+.footer-heading p:hover {
   text-decoration: underline;
 }
 
@@ -144,7 +144,6 @@ p:hover {
 }
 
 @media screen and (max-width: 720px) {
-
   .footer-2,
   .footer-3,
   .footer-4 {
@@ -155,4 +154,5 @@ p:hover {
 
   .footer {
     height: 90vh;
+  }
 }
