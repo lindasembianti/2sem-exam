@@ -1,7 +1,7 @@
 main {
   padding-top: 10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 #about {
   background-color: #f4f1ea;
@@ -30,18 +30,24 @@ main {
   padding: 1rem;
   border-bottom: 1px solid #423125;
   border-top: 1px solid #423125;
+  font-family: "Americana Std";
+  font-weight: lighter;
 }
+
 #about-text h2,
 #about-heading {
   font-family: "Americana Std";
 }
+
 #about-text p {
   font-family: "Neue Haas Grotesk Display Pro medium";
   line-height: 1.5;
 }
+
 #img-text img {
   width: 30%;
 }
+
 #text {
   align-items: center;
   padding-bottom: 2rem;
@@ -75,4 +81,75 @@ main {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #423125;
   -webkit-text-fill-color: transparent;
+}
+
+/* about wood */
+
+#about_wood {
+  padding-top: 8rem;
+}
+
+/* fsc */
+
+.fsc-img img {
+  width: 50%;
+  padding: 4rem 0;
+}
+
+.fsc-img {
+  text-align: center;
+  border-left: #423125 solid 1px;
+  text-align: center;
+  width: 50%;
+}
+
+.fsc {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.fsc-text {
+  align-items: center;
+  padding: 6rem 11rem;
+  height: 100%;
+  margin: auto;
+}
+
+.text-wrapper {
+  width: 50%;
+}
+
+.woods {
+  border-top: #423125 1px solid;
+  border-bottom: #423125 1px solid;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+}
+
+.woods-imgs {
+  display: flex;
+  flex-direction: row;
+  column-gap: 19rem;
+  margin: 5rem 11rem 0 11rem;
+}
+
+.woods-imgs img {
+  width: 35%;
+}
+
+.heading-wood {
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.fsc-text p,
+.woods-text p {
+  font-family: "Neue Haas Grotesk Display Pro light", sans-serif;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+.woods-text {
+  padding: 0 11rem;
 }
