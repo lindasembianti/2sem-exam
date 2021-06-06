@@ -182,6 +182,7 @@ h2 {
   align-items: center;
   transition: all 0.2s;
   cursor: pointer;
+  z-index: 1;
 }
 .arrow {
   background: url(/assets/images/arrow_icon-white.png);

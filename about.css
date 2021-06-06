@@ -1,7 +1,6 @@
 main {
   padding-top: 10rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding: 0 8rem;
 }
 #about {
   background-color: #f4f1ea;
@@ -12,9 +11,9 @@ main {
 }
 #img-text {
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
+  flex-direction: row-reverse;
   justify-content: space-evenly;
+  align-items: flex-end;
 }
 #img {
   background: url(/assets/images/arthur.JPG);
@@ -23,9 +22,7 @@ main {
   width: 30vw;
   height: 50vh;
 }
-/* .about-row {
-  width: 100%;
-} */
+
 #about-text {
   padding: 2rem;
   width: 30vw;
@@ -45,34 +42,36 @@ main {
   font-family: "Americana Std";
   font-weight: lighter;
 }
-#about-text h2 {
+.about-row h2 {
   font-family: "Americana Std";
+  padding: 0;
+  margin: 0;
 }
 
-#about-text p {
+.about-row p {
   font-family: "Neue Haas Grotesk Display Pro medium";
   line-height: 1.5;
+  margin: 0;
 }
 
 #text {
   align-items: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-#text p {
-  font-family: "Neue Haas Grotesk Display Pro light";
-  width: 40vw;
+  width: 30vw;
   margin: auto;
   border: solid #423125 1px;
-  padding: 2rem;
   line-height: 1.5;
+  padding: 3rem;
+  margin-bottom: 3rem;
 }
+
 .outlined {
   position: absolute;
   padding: 0;
+  display: flex;
+}
+.outlined-about {
   top: 70%;
   left: 20%;
-  display: flex;
 }
 .outlined h2 {
   text-transform: uppercase;
@@ -96,12 +95,11 @@ main {
 /* fsc */
 
 .fsc-img img {
-  width: 50%;
+  width: 60%;
   padding: 4rem 0;
 }
 
 .fsc-img {
-  text-align: center;
   border-left: #423125 solid 1px;
   text-align: center;
   width: 50%;
@@ -110,12 +108,17 @@ main {
 .fsc {
   display: flex;
   flex-direction: row;
+  position: relative;
   margin: 0;
+}
+.outlined-fsc {
+  top: 20%;
+  left: 30%;
 }
 
 .fsc-text {
   align-items: center;
-  padding: 6rem 11rem;
+  padding: 4rem 7rem;
   height: 100%;
   margin: auto;
 }
@@ -124,38 +127,332 @@ main {
   width: 50%;
 }
 
-.woods {
+.wood {
   border-top: #423125 1px solid;
   border-bottom: #423125 1px solid;
   padding: 5rem 0;
   margin-bottom: 5rem;
+  position: relative;
+}
+.outlined-wood {
+  top: 15%;
+  left: 15%;
 }
 
-.woods-imgs {
+.wood-imgs {
   display: flex;
   flex-direction: row;
-  column-gap: 19rem;
-  margin: 5rem 11rem 0 11rem;
+  justify-content: space-around;
+  width: 100%;
+  margin: 7rem 0 2rem 0;
 }
 
-.woods-imgs img {
+.wood-imgs img {
   width: 35%;
 }
 
 .heading-wood {
   font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
   letter-spacing: 0.1rem;
-}
-
-.fsc-text p,
-.woods-text p {
-  font-family: "Neue Haas Grotesk Display Pro light", sans-serif;
-  line-height: 1.5;
   font-weight: lighter;
 }
 
-.woods-text {
-  padding: 0 11rem;
+.fsc-text p,
+.wood-text p {
+  font-family: "Neue Haas Grotesk Display Pro light", sans-serif;
+  line-height: 1.5;
+  font-weight: lighter;
+  font-size: larger;
+}
+
+.wood-text {
+  padding: 0 6rem;
 }
 
 /* outlined text wood */
+/*RESPONSIVENESS*/
+@media screen and (max-width: 1256px) {
+  #img {
+    height: 70vh;
+  }
+  .outlined-about {
+    top: 100%;
+  }
+  .outlined h2 {
+    font-size: 220px;
+  }
+  .fsc-img img {
+    width: 70%;
+  }
+  .fsc-text {
+    padding: 4rem 4rem;
+  }
+  .wood-text {
+    padding: 0 8rem;
+  }
+  .outlined-wood {
+    top: 30%;
+    left: 10%;
+  }
+  .wood-text {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1178px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  #text {
+    padding: 2rem;
+  }
+  .outlined h2 {
+    font-size: 200px;
+  }
+  .fsc-text {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 1046px) {
+  .outlined-wood h2 {
+    font-size: 180px;
+  }
+  .wood {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .wood-imgs {
+    margin: 4rem 0;
+  }
+  .fsc-text p,
+  .wood-text p {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 1036px) {
+  #img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  #img {
+    height: 50vh;
+  }
+  #about {
+    row-gap: 1rem;
+  }
+  #about_wood {
+    padding-top: 5rem;
+  }
+  #img,
+  #about-text {
+    width: 40vw;
+  }
+  #img {
+    margin-left: 10rem;
+  }
+  .outlined h2 {
+    font-size: 180px;
+  }
+
+  #about-text p {
+    line-height: 1.5;
+    padding: 0;
+  }
+  .fsc-img img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #about_wood {
+    padding-top: 3rem;
+  }
+  #about-text,
+  #text {
+    width: 45vw;
+    padding: 1rem;
+  }
+  .outlined-about {
+    top: 90%;
+  }
+  .fsc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+  .fsc-img {
+    text-align: center;
+    border-left: none;
+    width: 100%;
+  }
+  .fsc-img img {
+    padding: 0;
+    width: 50%;
+  }
+
+  .text-wrapper {
+    width: 100%;
+  }
+
+  .outlined h2 {
+    font-size: 160px;
+  }
+  .wood-imgs img {
+    width: 40%;
+  }
+  .wood-text {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .outlined h2 {
+    font-size: 150px;
+  }
+  #about-text,
+  #text {
+    width: 50vw;
+  }
+
+  .fsc {
+    margin-bottom: 2rem;
+  }
+  .wood {
+    padding: 2rem 0;
+  }
+  .outlined-wood {
+    top: 20%;
+    left: 7%;
+  }
+  .outlined-fsc {
+    left: 20%;
+    top: 22%;
+  }
+  .fsc-text {
+    padding: 2rem;
+  }
+  .fsc-img img {
+    width: 70%;
+  }
+  .wood-imgs {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .wood-imgs img {
+    width: 35%;
+  }
+  #pine {
+    margin-left: 10rem;
+  }
+  #oak {
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .outlined h2 {
+    font-size: 120px;
+  }
+  .outlined-about {
+    top: 100%;
+  }
+  .wood-imgs img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .outlined-about {
+    left: 15%;
+  }
+  main {
+    margin-top: 7rem;
+    padding: 0 5rem;
+  }
+  #img {
+    margin-left: 5rem;
+    width: 50vw;
+  }
+  .outlined-fsc {
+    top: 30%;
+    left: 20%;
+  }
+  .fsc-img img {
+    width: 80%;
+  }
+  .outlined-wood {
+    left: 3%;
+    top: 20%;
+  }
+  .wood-text {
+    padding: 0;
+  }
+  .wood-imgs img {
+    width: 70%;
+  }
+  #pine {
+    margin-left: 5rem;
+  }
+  #oak {
+    margin-right: 5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .outlined h2 {
+    font-size: 80px;
+  }
+  .outlined-about {
+    top: 90%;
+  }
+  .outlined-fsc,
+  .outlined-wood {
+    top: 40%;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  #about-text h2 {
+    font-size: larger;
+  }
+  #about-text p {
+    font-size: small;
+  }
+  main {
+    margin-top: 7rem;
+    padding: 0 4rem;
+  }
+  #img {
+    margin: 0;
+    height: 30vh;
+    width: 55vw;
+  }
+  #about_wood {
+    padding-top: 1rem;
+  }
+  .fsc-text {
+    padding: 1rem;
+  }
+  .fsc-img img {
+    width: 90%;
+  }
+  .wood {
+    padding: 1rem;
+  }
+  .heading-wood {
+    margin: 0;
+  }
+  .wood-imgs img {
+    width: 80%;
+  }
+  #pine {
+    margin-left: 3rem;
+  }
+  #oak {
+    margin-right: 3rem;
+  }
+}
