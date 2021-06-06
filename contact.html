@@ -28,81 +28,107 @@
           What type of custom solution are you looking for?
         </h2>
         <form action="POST" data-netlify="true" method="get" id="custom_form">
-          <div class="row">
-            <label class="float" for="fname">Full name</label>
-            <input type="text" id="fname" name="fname" required />
-            <label class="float" for="phone_number">Phone number</label>
-            <input type="tel" id="phone_number" name="phone_number" required />
+          <div id="form-wrapper">
+            <div class="row">
+              <input
+                placeholder="Full name"
+                type="text"
+                id="fname"
+                name="fname"
+                required
+              />
+              <input
+                placeholder="Phone number"
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                required
+              />
+            </div>
+            <div class="row">
+              <input
+                placeholder="E-mail"
+                type="email"
+                id="email_felt"
+                name="email_felt"
+                required
+              />
+
+              <select id="project_type" name="project_type" required>
+                <option value="" disabled selected hidden>
+                  Type of project
+                </option>
+                <option value="indoor">Indoor furniture</option>
+                <option value="outdoor">Outdoor furniture</option>
+                <option value="kitchen">Kitchen</option>
+                <option value="dressing">Dressing</option>
+                <option value="restoration">Restoration of furniture</option>
+                <option value="tables">Tables</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div id="budget">
+              <p>
+                In order to meet your needs of quality what is your budget?
+                (Dkk)
+              </p>
+
+              <input
+                class="box"
+                type="checkbox"
+                id="first"
+                name="first"
+                value="0-20.000"
+              />
+              <label for="first">0-20.000</label>
+
+              <input
+                class="box"
+                type="checkbox"
+                id="second"
+                name="second"
+                value="20.000-50.000"
+              />
+              <label for="second">20.000-50.000</label>
+
+              <input
+                class="box"
+                type="checkbox"
+                id="third"
+                name="third"
+                value="50.000-100.000"
+              />
+              <label for="third">50.000-100.000</label>
+
+              <input
+                class="box"
+                type="checkbox"
+                id="fourth"
+                name="fourth"
+                value="100.000"
+              />
+              <label for="fourth">100.000 +</label>
+            </div>
+            <div id="message_box">
+              <!-- <label class="float" for="message">Message</label> -->
+              <textarea
+                placeholder="Message"
+                id="message"
+                name="message"
+                rows="5"
+                cols="55"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              form="custom_form"
+              value="Submit"
+              class="enquire"
+            >
+              Send enquire
+              <div class="arrow"></div>
+            </button>
           </div>
-          <div class="row">
-            <label class="float" for="email_felt">E-mail</label>
-            <input type="email" id="email_felt" name="email_felt" required />
-
-            <label class="float" for="project_type">Type of Project</label>
-            <select id="project_type" name="project_type" required>
-              <option value="indoor">Indoor furniture</option>
-              <option value="outdoor">Outdoor furniture</option>
-              <option value="kitchen">Kitchen</option>
-              <option value="dressing">Dressing</option>
-              <option value="restoration">Restoration of furniture</option>
-              <option value="tables">Tables</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div id="budget">
-            <p>
-              In order to meet your needs of quality what is your budget? (Dkk)
-            </p>
-
-            <input
-              class="box"
-              type="checkbox"
-              id="first"
-              name="first"
-              value="0-20.000"
-            />
-            <label for="first">0-20.000</label>
-
-            <input
-              class="box"
-              type="checkbox"
-              id="second"
-              name="second"
-              value="20.000-50.000"
-            />
-            <label for="second">20.000-50.000</label>
-
-            <input
-              class="box"
-              type="checkbox"
-              id="third"
-              name="third"
-              value="50.000-100.000"
-            />
-            <label for="third">50.000-100.000</label>
-
-            <input
-              class="box"
-              type="checkbox"
-              id="fourth"
-              name="fourth"
-              value="100.000"
-            />
-            <label for="fourth">100.000 +</label>
-          </div>
-          <div id="message_box">
-            <label class="float" for="message">Message</label>
-            <textarea id="message" name="message" rows="5" cols="55"></textarea>
-          </div>
-          <button
-            type="submit"
-            form="custom_form"
-            value="Submit"
-            class="enquire"
-          >
-            Send enquire
-            <div class="arrow"></div>
-          </button>
         </form>
       </div>
 

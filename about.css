@@ -86,7 +86,14 @@ main {
   -webkit-text-stroke-color: #423125;
   -webkit-text-fill-color: transparent;
 }
-
+#video {
+  width: 100%;
+  text-align: center;
+}
+iframe {
+  width: 80%;
+  height: 60vh;
+}
 /* about wood */
 
 #about_wood {

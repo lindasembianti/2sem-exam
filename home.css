@@ -83,7 +83,7 @@ h2 {
 }
 /*TRANSLATE*/
 #all-projects a:nth-child(4n) {
-  transform: translate(30%, -70%);
+  transform: translate(30%, -60%);
 }
 
 #all-projects a:nth-child(4n + 2) {
@@ -150,7 +150,7 @@ h2 {
 }
 .project-info {
   border-right: solid #423125 1px;
-  padding: 2rem;
+  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -165,7 +165,7 @@ h2 {
   padding: 1rem;
 }
 .project-pictures img {
-  width: 100%;
+  width: 70%;
 }
 /*DEFAULT BROWN*/
 .project-info a {

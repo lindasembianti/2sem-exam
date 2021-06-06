@@ -148,9 +148,6 @@ footer {
   }
 }
 @media screen and (max-width: 1000px) {
-  .logo-header img {
-    width: 12%;
-  }
   .footer-logo img {
     width: 17%;
     margin: 2rem auto;
