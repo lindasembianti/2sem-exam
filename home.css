@@ -168,6 +168,10 @@ h2 {
   width: 100%;
 }
 /*DEFAULT BROWN*/
+.project-info a {
+  text-decoration: none;
+  z-index: 1;
+}
 .enquire {
   font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
   font-size: large;
@@ -192,13 +196,13 @@ h2 {
   background-repeat: no-repeat;
   transition: all 0.2s;
 }
-.enquire:hover {
+.project-info a:hover .enquire {
   background: none;
   border: solid #423125 1px;
   color: #423125;
   transition: all 0.2s;
 }
-.enquire:hover .arrow {
+.project-info a:hover .arrow {
   background: url(/assets/images/arrow_icon.png);
   width: 25%;
   height: 1.5rem;
@@ -206,42 +210,4 @@ h2 {
   background-repeat: no-repeat;
   transition: all 0.2s;
 }
-/*DEFAULT WHITE
-.inquire {
-  font-family: "Neue Haas Grotesk Display Pro";
-  font-size: large;
-  background: none;
-  color: #423125;
-  border: solid #423125 1px;
-  padding: 1rem;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  transition: all 0.2s;
-  cursor: pointer;
-}
-.arrow {
-  background: url(/assets/images/arrow_icon.png);
-  width: 25%;
-  height: 1.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: all 0.2s;
-}
-.inquire:hover {
-  background: none;
-  background-color: #423125;
-  color: white;
-  transition: all 0.2s;
-}
-.inquire:hover .arrow {
-  background: url(/assets/images/arrow_icon-white.png);
-  width: 25%;
-  height: 1.5rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: all 0.2s;
-}
-*/
+/*RESPONSIVENES*/

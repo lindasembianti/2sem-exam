@@ -8,6 +8,7 @@ main {
   flex-direction: column;
   row-gap: 2rem;
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 #img-text {
   display: flex;
@@ -172,6 +173,9 @@ main {
 /* outlined text wood */
 /*RESPONSIVENESS*/
 @media screen and (max-width: 1256px) {
+  #about {
+    padding: 0;
+  }
   #img {
     height: 70vh;
   }
