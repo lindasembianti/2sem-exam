@@ -1,12 +1,12 @@
 /*FONTS*/
 @font-face {
-  font-family: Americana Std;
+  font-family: "Americana Std";
   src: url("assets/fonts/AmericanaStdRoman/AmericanaStdRoman.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: Neue Haas Grotesk Display Pro;
+  font-family: "Neue Haas Grotesk Display Pro";
   src: url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayLight.ttf")
       format("ttf"),
     url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayMediu.ttf") format("ttf"),
