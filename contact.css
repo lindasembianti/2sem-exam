@@ -15,7 +15,8 @@ main {
 #info #process div p {
   margin: 1rem;
   color: #423125;
-  font-family: "Neue Haas Grotesk Display Pro light";
+  font-family: "Neue Haas Grotesk Display Pro Light", sans-serif;
+  font-weight: lighter;
 }
 
 #info #process div img {
@@ -41,7 +42,8 @@ main {
 
 #contact p {
   color: #423125;
-  font-family: "Neue Haas Grotesk Display Pro light";
+  font-family: "Neue Haas Grotesk Display Pro Light", sans-serif;
+  font-weight: lighter;
 }
 
 #icons {
@@ -81,7 +83,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 25px;
-  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro Roman", sans-serif;
   z-index: 1;
 }
 #form-wrapper {
@@ -96,7 +98,7 @@ label.float {
 }
 
 input {
-  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro Roman", sans-serif;
   background-color: #f4f1ea;
   border: 1px solid #423125;
   padding: 12px;
@@ -195,7 +197,7 @@ textarea:focus {
   font-size: medium;
   background-color: #fffdf8;
   padding: 1rem;
-  font-family: "Neue Haas Grotesk Display Pro medium";
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
   letter-spacing: 0.1rem;
 }
 .animate {
@@ -218,7 +220,7 @@ textarea:focus {
 
 /*DEFAULT BROWN BUTTON*/
 .enquire {
-  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro Roman", sans-serif;
   font-size: large;
   background-color: #423125;
   color: white;

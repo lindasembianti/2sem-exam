@@ -53,7 +53,7 @@ main {
 }
 
 .about-row p {
-  font-family: "Neue Haas Grotesk Display Pro medium";
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -82,6 +82,7 @@ main {
   z-index: 0;
   width: 100%;
   font-family: "Americana Std";
+  font-weight: normal;
   opacity: 0.3;
   font-size: 250px;
   margin: 0;
@@ -170,7 +171,7 @@ main {
 
 .fsc-text p,
 .wood-text p {
-  font-family: "Neue Haas Grotesk Display Pro light", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro Light", sans-serif;
   line-height: 1.5;
   font-weight: lighter;
   font-size: larger;

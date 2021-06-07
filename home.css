@@ -31,7 +31,8 @@ h2 {
   font-family: "Americana Std";
 }
 #monsi-btn-txt p {
-  font-family: "Neue Haas Grotesk Display Pro light";
+  font-family: "Neue Haas Grotesk Display Pro Light", sans-serif;
+  font-weight: lighter;
   font-size: larger;
 }
 #arrow-monsi {
@@ -119,6 +120,7 @@ h2 {
   width: 100%;
   height: auto;
   font-family: "Americana Std";
+  font-weight: normal;
   font-size: 400px;
   margin: auto;
   text-align: center;
@@ -155,7 +157,8 @@ h2 {
 .project-info p {
   z-index: 1;
   line-height: 1.5;
-  font-family: "Neue Haas Grotesk Display Pro light";
+  font-family: "Neue Haas Grotesk Display Pro Light", sans-serif;
+  font-weight: lighter;
 }
 .project-pictures {
   text-align: center;
@@ -170,7 +173,7 @@ h2 {
   z-index: 1;
 }
 .enquire {
-  font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro Roman", sans-serif;
   font-size: large;
   background-color: #423125;
   color: white;
