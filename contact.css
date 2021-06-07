@@ -234,7 +234,7 @@ textarea:focus {
   cursor: pointer;
 }
 .arrow {
-  background: url(/assets/images/arrow_icon-white.png);
+  background: url(assets/images/arrow_icon-white.png);
   width: 25%;
   height: 1.5rem;
   background-size: contain;
@@ -248,7 +248,7 @@ textarea:focus {
   transition: all 0.2s;
 }
 .enquire:hover .arrow {
-  background: url(/assets/images/arrow_icon.png);
+  background: url(assets/images/arrow_icon.png);
   width: 25%;
   height: 1.5rem;
   background-size: contain;
