@@ -82,6 +82,7 @@ form {
   flex-direction: column;
   padding: 25px;
   font-family: "Neue Haas Grotesk Display Pro roman", sans-serif;
+  z-index: 1;
 }
 #form-wrapper {
   width: 100%;
@@ -124,6 +125,7 @@ form input#email_felt {
 form select#project_type {
   background-color: #f4f1ea;
   border: 1px solid #423125;
+  color: #423125;
   padding: 15px;
   padding-left: 10px;
   padding-top: 35px;
@@ -173,6 +175,12 @@ div#message_box textarea {
 
 div#message_box textarea:focus {
   outline: 1px solid #423125;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #423125;
 }
 
 /*DEFAULT BROWN BUTTON*/
