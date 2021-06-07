@@ -27,7 +27,7 @@
         <h2 class="heading">
           What type of custom solution are you looking for?
         </h2>
-        <form action="POST" data-netlify="true" method="get" id="custom_form">
+        <form data-netlify="true" method="get" id="custom_form">
           <div id="form-wrapper">
             <div class="row">
               <input
@@ -110,7 +110,6 @@
               <label for="fourth">100.000 +</label>
             </div>
             <div id="message_box">
-              <!-- <label class="float" for="message">Message</label> -->
               <textarea
                 placeholder="Message"
                 id="message"
@@ -119,15 +118,21 @@
                 cols="55"
               ></textarea>
             </div>
-            <button
-              type="submit"
-              form="custom_form"
-              value="Submit"
-              class="enquire"
-            >
-              Send enquire
-              <div class="arrow"></div>
-            </button>
+            <div id="btn-msg">
+              <button
+                type="submit"
+                form="custom_form"
+                value="Submit"
+                class="enquire"
+              >
+                Send enquire
+                <div class="arrow"></div>
+              </button>
+              <h3 class="" id="ty-message">
+                <span>Thank you!</span> Your enquire has been sent, I will
+                contact you soon!
+              </h3>
+            </div>
           </div>
         </form>
       </div>
@@ -239,5 +244,6 @@
         </div>
       </div>
     </footer>
+    <script src="contact.js"></script>
   </body>
 </html>
