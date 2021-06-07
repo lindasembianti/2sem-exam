@@ -9,8 +9,8 @@
   font-family: Neue Haas Grotesk Display Pro;
   src: url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayLight.ttf")
       format("ttf"),
-    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayMediu.ttf"),
-    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayRoman.ttf");
+    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayMediu.ttf") format("ttf"),
+    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayRoman.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
