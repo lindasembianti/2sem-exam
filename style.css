@@ -11,8 +11,8 @@
       format("ttf"),
     url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayMediu.ttf") format("ttf"),
     url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayRoman.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal;
+  font-style: normal; */
 }
 
 /* general style */
