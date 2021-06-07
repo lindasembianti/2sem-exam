@@ -1,16 +1,17 @@
 /*FONTS*/
 @font-face {
   font-family: "Americana Std";
-  src: url("assets/fonts/AmericanaStdRoman/AmericanaStdRoman.otf") format("otf");
+  src: url("assets/fonts/AmericanaStdRoman/Americana-Std-Roman.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayLight.ttf")
+  src: url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayLight.woff")
       format("ttf"),
-    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayMediu.ttf") format("ttf"),
-    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayRoman.ttf") format("ttf");
+    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayMediu.woff") format("woff"),
+    url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayRoman.woff") format("woff");
   /* font-weight: normal;
   font-style: normal; */
 }

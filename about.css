@@ -9,6 +9,8 @@ main {
   row-gap: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
+  margin-top: 7.5rem;
+  /* border-top: 1px solid #423125; */
 }
 #img-text {
   display: flex;
@@ -19,7 +21,7 @@ main {
 #img {
   background: url(assets/images/arthur.JPG);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   width: 30vw;
   height: 50vh;
 }
@@ -36,10 +38,11 @@ main {
   text-align: center;
   font-size: 3rem;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 0;
   color: #423125;
   border-bottom: 1px solid #423125;
   border-top: 1px solid #423125;
+  width: 100%;
   font-family: "Americana Std";
   font-weight: lighter;
 }
